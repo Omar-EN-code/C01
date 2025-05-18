@@ -9,5 +9,5 @@ count=$(ls -1 "$folder" | wc -l)
 if [ -z $count ]; then
 
   #Resultat
-  echo "Le dossier $folder contient $count fichier(s)."
+  echo "Le dossier '$folder' contient $count fichier(s)."
 fi
