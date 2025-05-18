@@ -3,6 +3,6 @@
 read folder
 
 #recuperation des nombres des fichiers 
-count=$(ls -1 "$folder" | wc -l)
+count=$(ls -p "$folder" | grep -v / | wc -l)
 
 echo "Le dossier $folder contient $count fichier(s)."
